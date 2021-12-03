@@ -8,4 +8,4 @@ mongoDB : 27017
 - http://localhost:8002/api/goods?category=food
 
 ## License
-Distributed under the MIT License. See https://github.com/juhan2103/premier-league/blob/develop/LICENSE for more information.
+Distributed under the MIT License.
