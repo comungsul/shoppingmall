@@ -1,6 +1,6 @@
 # shoppingmall
 
-localhost:8002 <br>
+localhost : 8002 <br>
 mongoDB : 27017
 
 ## api link<br>
