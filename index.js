@@ -1,16 +1,31 @@
 const express = require('express')
+const mongoose = require('mongoose');
 const app = express()
 const port = 8002
+
+const connect = require("./schemas");
+connect();
 
 app.use(express.urlencoded({extended: false}))
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.render('index');  // ejs 파일 적용
-})
+const goodsRouter = require('./routes/goods');
 
-app.get('/detail', (req, res) => {
-  res.render('detail')  // ejs 파일 적용
+app.get('/', (req, res) => { // localhost 첫 페이지
+    res.send('go to goods <a href="/list">list</a>')
+  })
+
+app.use('/',goodsRouter); // goods 라우터
+
+app.get('/mongodb', async (req, res) => {
+    await mongoose.connect('mongodb://localhost/voyage', {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        //useFindAndModify: true,   // mongoose 6.0 이상부터 사라짐
+        //useCreateIndex: true   // mongoose 6.0 이상부터 사라짐
+    });
+
+	res.send('ok');
 })
 
 app.set('views', __dirname + '/views');
