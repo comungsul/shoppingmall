@@ -8,4 +8,4 @@ mongoDB : 27017
 - http://localhost:8002/api/goods?category=food
 
 ## License
-Distributed under the MIT License.
+Distributed under the APACHE 2.0 License. See `LICENSE` for more information.
