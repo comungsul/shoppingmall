@@ -52,6 +52,7 @@
                 data: {},
                 success: function (response) {
                     let goods = response["goods"]
+                    console.log(response["goods"])
                     for (let i = 0; i < goods.length; i++) {
                         make_card(goods[i])
 

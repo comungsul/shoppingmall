@@ -2,7 +2,10 @@ const mongoose = require("mongoose");
 
 const connect = () => {
   mongoose
-    .connect("mongodb://localhost:27017/voyage", {
+    .connect("mongodb://mongo:27017/voyage", {
+      // "auth": { "authSource": "admin" },
+      // "user": "root",
+      // "pass": "example",
       useNewUrlParser: true,
       useUnifiedTopology: true,
       //useFindAndModify: true,   // mongoose 6.0 이상부터 사라짐
