@@ -2,10 +2,7 @@ const mongoose = require("mongoose");
 
 const connect = () => {
   mongoose
-    .connect("mongodb://mongo:27017/voyage", {
-      // "auth": { "authSource": "admin" },
-      // "user": "root",
-      // "pass": "example",
+    .connect("mongodb://mongo:27017/voyage", { // docker에 올리려면 localhost:27017이 아니라 mongo:27017로 해야한다.
       useNewUrlParser: true,
       useUnifiedTopology: true,
       //useFindAndModify: true,   // mongoose 6.0 이상부터 사라짐
