@@ -1,7 +1,10 @@
 # shoppingmall
 
+## information
 localhost : 8002 <br>
-mongoDB : 27017
+mongoDB : 27017 <br>
+
+https://www.notion.so/24fc3556faba4510845e06495ebca903
 
 ## food & drink API<br>
 - http://localhost:8002/api/goods?category=drink<br>
