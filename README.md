@@ -14,7 +14,7 @@ https://www.notion.so/24fc3556faba4510845e06495ebca903
 EC2 주소는 고정되지 않아서 킬때마다 변경된다.
 
 ### main page
-![image](https://user-images.githubusercontent.com/70627982/145027012-6c5a46ed-80d7-4bf6-bbb1-e2cff649d80a.png)
+![image](https://user-images.githubusercontent.com/70627982/145052026-d6cc9f5f-96cd-4f51-9ec3-2e6bf23f85b0.png)
 
 ### select category
 ![image](https://user-images.githubusercontent.com/70627982/145027207-e8a7c123-d1d5-4a4e-a66b-3c306d3ad57b.png)
