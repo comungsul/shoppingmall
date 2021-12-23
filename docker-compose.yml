@@ -7,6 +7,14 @@ services:
       - 8002:8002
     networks:
       - net
+    deploy:
+      resources:
+         limits:
+          cpus: '0.001'
+          memory: 50M
+          reservations:
+          cpus: '0.0001'
+         memory: 20M
 
   mongo-express:
     image: mongo-express
