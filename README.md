@@ -1,5 +1,5 @@
 # shoppingmall
-
+구현자 배준일
 ## information
 localhost : 8002 <br>
 mongoDB : 27017 <br>
