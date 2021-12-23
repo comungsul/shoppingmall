@@ -30,7 +30,9 @@ app.get('/goods/list',(req, res, next)=>{ // http://localhost:${port}/goods/list
 app.use('/goods',goodsRouter); // goods 라우터
 
 app.get('/mongodb', async (req, res) => {
-    await mongoose.connect('mongodb://mongo/voyage', { // docker에 올리려면 localhost:27017이 아니라 mongo:27017로 해야한다.
+    await mongoose.connect('mongodb://mongodb:27017/voyage', { // docker에 올리려면 localhost:27017이 아니라 mongo:27017로 해야한다.
+	user: 'root',
+	pass: 'example',
         useNewUrlParser: true,
         useUnifiedTopology: true,
         //useFindAndModify: true,   // mongoose 6.0 이상부터 사라짐
